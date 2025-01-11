@@ -29,8 +29,8 @@ const ProofInSlide = () => {
 
   return (
     <div className="bg-black text-white text-xl md:text-4xl font-bold text-center space-y-10 md:space-y-16">
-      <h1>Increased sales by 50% in 2 months</h1>
-      <div className="relative mx-auto overflow-hidden w-2/3 md:w-1/3 rounded-xl">
+      <h1>Increased sales by 50% in 2 months.</h1>
+      <div className="relative mx-auto overflow-hidden w-2/3 md:w-3/5 rounded-xl">
         <div
           className="flex transition-transform duration-700"
           style={{
@@ -61,7 +61,7 @@ const ProofInSlide = () => {
           &#10095;
         </button> */}
 
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+        {/* <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
           {images.map((_, index) => (
             <button
               key={index}
@@ -71,7 +71,7 @@ const ProofInSlide = () => {
               }`}
             ></button>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

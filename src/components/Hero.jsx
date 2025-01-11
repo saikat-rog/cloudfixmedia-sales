@@ -1,5 +1,5 @@
 import RectangleOverlay from "../assets/rectangle_overlay.svg";
-import Logo from "../../public/logo.png";
+import Logo from "/logo.png";
 export default function Hero() {
   return (
     <section className="w-full h-screen bg-black text-popins text-white">

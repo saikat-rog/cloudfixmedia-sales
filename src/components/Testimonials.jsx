@@ -73,7 +73,7 @@ const Testimonials = () => {
         {testimonials.map((testimonial, index) => (
   <div key={index} className="px-1 md:px-4">
     <div
-      className="bg-gray-800 p-5 rounded-lg text-sm md:text-lg h-full text-start flex flex-col justify-between space-y-4"
+      className="bg-gray-800 p-5 rounded-lg text-sm md:text-lg h-5/6 md:h-64 text-start flex flex-col justify-between space-y-4"
     >
       <p className="italic line-clamp-4 md:line-clamp-5">
         &quot;{testimonial.quote}&quot;

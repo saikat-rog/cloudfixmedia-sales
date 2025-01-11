@@ -6,6 +6,7 @@ import Brands from './components/Brands';
 import Testimonials from './components/Testimonials';
 import Tips from './components/Tips';
 import Faqs from './components/Faqs';
+import Footer from './components/Footer';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -14,12 +15,13 @@ export default function App() {
     <>
       <Hero/>
       <HighLight/>
-      <BookingTimer targetDate="2024-12-31T23:59:59"/>
+      <BookingTimer/>
       <ProofInSlide/>
       <Brands/>
       <Testimonials/>
       <Tips/>
       <Faqs/>
+      <Footer/>
     </>
   )
 }

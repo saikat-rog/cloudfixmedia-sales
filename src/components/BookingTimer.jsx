@@ -14,7 +14,11 @@ function getTimeLeft(targetDate) {
   };
 }
 
-function BookingTimer({ targetDate }) {
+function BookingTimer() {
+  const currentDate = new Date();
+  currentDate.setHours(23, 59, 59, 999); // Set target time to 11:59 PM today
+  const targetDate = currentDate.toISOString();
+  
   const [timeLeft, setTimeLeft] = useState(() => getTimeLeft(targetDate));
 
   useEffect(() => {
