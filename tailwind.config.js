@@ -11,6 +11,8 @@ export default {
         primary: "#FFFFFF", // Dark theme color
         darkBg: "#121212", // Light theme color black
         accent: "#366FA3", // Accent color sky blue 2
+        accent2: "#080F1A", // Accent color sky blue 2
+        accent3: "#092143CC", // Accent color sky blue 2
         button: "#548FD2", // Button color sky blue
       },
       borderRadius: {
