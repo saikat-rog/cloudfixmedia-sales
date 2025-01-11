@@ -1,4 +1,4 @@
-import RectangleOverlay from "../assets/rectangle_overlay.svg";
+import RectangleOverlay from "../assets/rectangle_overlay.png";
 import Logo from "/logo.png";
 export default function Hero() {
   return (
