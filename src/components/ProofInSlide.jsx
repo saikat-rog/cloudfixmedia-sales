@@ -29,8 +29,8 @@ const ProofInSlide = () => {
 
   return (
     <div className="bg-black text-white text-xl md:text-4xl font-bold text-center space-y-10 md:space-y-16">
-      <h1>Increased sales by 50% in 2 months.</h1>
-      <div className="relative mx-auto overflow-hidden w-2/3 md:w-3/5 rounded-xl">
+      <h1 className="text-xl md:text-4xl">Increased sales by 50% in 2 months</h1>
+      <div className="relative mx-auto overflow-hidden w-11/12 md:w-3/5 rounded-xl">
         <div
           className="flex transition-transform duration-700"
           style={{

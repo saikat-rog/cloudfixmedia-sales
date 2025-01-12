@@ -41,6 +41,8 @@ const Testimonials = () => {
     speed: 500, // Speed of the transition
     slidesToShow: 3, // Show three testimonials at a time
     slidesToScroll: 1, // Scroll one testimonial at a time
+    pauseOnHover: true, // Pause the sliding when hovering
+    pauseOnClick: true, // Pause the sliding when clicking
     autoplay: true, // Enable auto-sliding
     autoplaySpeed: 3000, // Set the time for each slide (in milliseconds)
     swipeToSlide: true, // Enable gesture swiping

@@ -25,7 +25,7 @@ export default function Hero() {
         <h1 className="text-3xl md:text-5xl font-bold uppercase max-w-2xl md:max-w-6xl text-center">
           Drive 2x Conversions for Your Men&apos;s Fashion E-Commerce Brand
         </h1>
-        <p className="w-full md:w-3/4 text-center mb-6">
+        <p className="w-full md:w-3/4 text-center text-sm md:text-xl mb-6">
           By Hitting A Minimum of{" "}
           <span className="text-yellow-200">6-10X in ROI</span> in Less Than 3
           Months
