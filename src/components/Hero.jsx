@@ -1,6 +1,14 @@
 import RectangleOverlay from "../assets/rectangle_overlay.png";
 import Logo from "/logo.png";
 export default function Hero() {
+
+  const handleScroll = () => {
+    const targetElement = document.getElementById("calendly-section");
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="w-full h-screen bg-black text-popins text-white">
       {/* Hero Section */}
@@ -30,7 +38,7 @@ export default function Hero() {
           <span className="text-yellow-200">6-10X in ROI</span> in Less Than 3
           Months
         </p>
-        <button className="mt-10 px-8 py-3 bg-accent2 rounded-md font-semibold text-lg md:text-xl">
+        <button onClick={handleScroll} className="mt-10 px-8 py-3 bg-accent2 rounded-md font-semibold text-lg md:text-xl">
           Book your strategy call
         </button>
       </div>

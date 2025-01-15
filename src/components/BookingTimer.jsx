@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import PropTypes from "prop-types";
 
 function getTimeLeft(targetDate) {
   const now = new Date();
@@ -27,7 +26,7 @@ function BookingTimer() {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [targetDate]);
+  });
 
   return (
     <section className="w-full h-auto bg-black flex flex-col text-white items-center justify-center py-16 space-y-10">
@@ -47,9 +46,5 @@ function BookingTimer() {
   );
 }
 
-// Prop validation
-BookingTimer.propTypes = {
-  targetDate: PropTypes.string.isRequired,
-};
 
 export default BookingTimer;

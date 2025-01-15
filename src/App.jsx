@@ -5,6 +5,7 @@ import ProofInSlide from './components/ProofInSlide';
 import Brands from './components/Brands';
 import Testimonials from './components/Testimonials';
 import Tips from './components/Tips';
+import Calendly from "./components/Calendly";
 import Faqs from './components/Faqs';
 import Footer from './components/Footer';
 import "slick-carousel/slick/slick.css";
@@ -19,6 +20,7 @@ export default function App() {
       <ProofInSlide/>
       <Brands/>
       <Testimonials/>
+      <Calendly/>
       <Tips/>
       <Faqs/>
       <Footer/>
