@@ -1,4 +1,8 @@
-import One from "/logo.png";
+import One from "../assets/One.svg";
+import Two from "../assets/Two.png";
+import Three from "../assets/Three.webp";
+import Four from "../assets/Four.webp";
+import Five from "../assets/Five.png";
 import Marquee from "react-fast-marquee";
 
 export default function Brands() {
@@ -11,27 +15,17 @@ export default function Brands() {
       <div className="overflow-hidden">
         <Marquee
           pauseOnHover={true}
-          loop={0}
+          loop={0} // Infinite loop
           gradient={true}
-          gradientWidth={100} // Increased gradient width for more concentration in the center
-          speed={40}
-          gradientColor="rgba(0, 0, 0, 0.8)" // Subtle transparent black gradient
-          className="sm:gradient-width-100 md:gradient-width-600"
+          gradientWidth={100} // Adjust gradient width for effect
+          speed={200} // Reduced speed for smoother scrolling
+          gradientColor={[0, 0, 0]} // Proper RGB format for black gradient
         >
           <img src={One} alt="Brand 1" className="h-16 mx-8" />
-          <img src={One} alt="Brand 1" className="h-16 mx-8" />
-          <img src={One} alt="Brand 1" className="h-16 mx-8" />
-          <img src={One} alt="Brand 1" className="h-16 mx-8" />
-          <img src={One} alt="Brand 1" className="h-16 mx-8" />
-          <img src={One} alt="Brand 1" className="h-16 mx-8" />
-          <img src={One} alt="Brand 1" className="h-16 mx-8" />
-          <img src={One} alt="Brand 1" className="h-16 mx-8" />
-          <img src={One} alt="Brand 1" className="h-16 mx-8" />
-          <img src={One} alt="Brand 1" className="h-16 mx-8" />
-          <img src={One} alt="Brand 1" className="h-16 mx-8" />
-          <img src={One} alt="Brand 1" className="h-16 mx-8" />
-          <img src={One} alt="Brand 1" className="h-16 mx-8" />
-          <img src={One} alt="Brand 1" className="h-16 mx-8" />
+          <img src={Two} alt="Brand 2" className="h-16 mx-8" />
+          <img src={Three} alt="Brand 3" className="h-16 mx-8" />
+          <img src={Four} alt="Brand 4" className="h-16 mx-8" />
+          <img src={Five} alt="Brand 5" className="h-16 mx-8" />
         </Marquee>
       </div>
     </div>

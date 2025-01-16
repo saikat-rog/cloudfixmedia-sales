@@ -16,7 +16,7 @@ const LeadMagnet = () => {
   return (
     <div className="w-full py-10 bg-gray-100 text-center px-4">
       <h2 className="text-xl md:text-3xl font-bold text-gray-800 mb-4">
-        Lead Magnet/Free Offer
+        FREE Offer
       </h2>
       <p className="text-sm md:text-lg text-gray-600 mb-6">
         <span className="font-semibold">10 Proven Marketing Tips for Men’s Fashion Brands.</span> <br />

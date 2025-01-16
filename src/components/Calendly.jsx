@@ -19,9 +19,8 @@ const Calendly = () => {
         Book your call today
       </h1>
       <div
-        className="calendly-inline-widget"
+        className="calendly-inline-widget min-w-[320px] h-[1000px] md:h-[700px]"
         data-url="https://calendly.com/cloudfixmedia/lead"
-        style={{ minWidth: "320px", height: "700px" }}
       ></div>
     </div>
   );
