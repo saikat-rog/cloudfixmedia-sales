@@ -1,4 +1,4 @@
-import One from "../assets/One.svg";
+import One from "../assets/One.png";
 import Two from "../assets/Two.png";
 import Three from "../assets/Three.webp";
 import Four from "../assets/Four.webp";
@@ -21,7 +21,7 @@ export default function Brands() {
           speed={200} // Reduced speed for smoother scrolling
           gradientColor={[0, 0, 0]} // Proper RGB format for black gradient
         >
-          <img src={One} alt="Brand 1" className="h-16 mx-8" />
+          <img src={One} alt="Brand 1" className="h-16 mx-8 rounded-lg" />
           <img src={Two} alt="Brand 2" className="h-16 mx-8" />
           <img src={Three} alt="Brand 3" className="h-16 mx-8" />
           <img src={Four} alt="Brand 4" className="h-16 mx-8" />

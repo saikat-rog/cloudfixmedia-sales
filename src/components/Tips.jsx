@@ -12,7 +12,7 @@ const LeadMagnet = () => {
       alert("Please enter a valid email address.");
     }
   };
-
+  
   return (
     <div className="w-full py-10 bg-gray-100 text-center px-4">
       <h2 className="text-xl md:text-3xl font-bold text-gray-800 mb-4">
