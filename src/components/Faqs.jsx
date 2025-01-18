@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function Faqs() {
   const handleButton = () => {
-    window.location.href = "https://calendly.com/cloudfixmedia/lead";
+    window.location.href = "https://calendly.com/cloudfixmedia/45-minutes-exploration-call-cloudfixmedia";
   };
 
   const [faqs, setFaqs] = useState([

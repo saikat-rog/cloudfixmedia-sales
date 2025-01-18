@@ -20,7 +20,7 @@ const Calendly = () => {
       </h1>
       <div
         className="calendly-inline-widget  md:min-w-[320px] h-[1000px] md:h-[700px]"
-        data-url="https://calendly.com/cloudfixmedia/lead"
+        data-url="https://calendly.com/cloudfixmedia/45-minutes-exploration-call-cloudfixmedia"
       ></div>
     </div>
   );

@@ -2,7 +2,7 @@ import Slider from "react-slick"; // Import react-slick for sliding functionalit
 
 const Testimonials = () => {
   const handleButton = () => {
-    window.location.href = "https://calendly.com/cloudfixmedia/lead";
+    window.location.href = "https://calendly.com/cloudfixmedia/45-minutes-exploration-call-cloudfixmedia";
   };
 
   // Testimonials data

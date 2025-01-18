@@ -5,7 +5,7 @@ const LeadMagnet = () => {
   const [email, setEmail] = useState("");
 
   const handleButton = () => {
-    window.location.href = "https://calendly.com/cloudfixmedia/lead";
+    window.location.href = "https://calendly.com/cloudfixmedia/45-minutes-exploration-call-cloudfixmedia";
   };
 
   const handleSubmit = (e) => {

@@ -10,7 +10,7 @@ import Marquee from "react-fast-marquee";
 
 export default function Brands() {
   const handleButton = () => {
-    window.location.href = "https://calendly.com/cloudfixmedia/lead";
+    window.location.href = "https://calendly.com/cloudfixmedia/45-minutes-exploration-call-cloudfixmedia";
   };
 
   return (

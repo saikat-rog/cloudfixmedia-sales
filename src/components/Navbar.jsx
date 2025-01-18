@@ -4,6 +4,10 @@ import Logo from "/logo.png";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleButton = () => {
+    window.location.href = "https://calendly.com/cloudfixmedia/45-minutes-exploration-call-cloudfixmedia";
+  };
+
   return (
     <div className="fixed top-0 left-0 w-full z-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -69,7 +73,7 @@ export default function Navbar() {
               >
                 FAQs
               </a>
-              <button className="bg-blue-600 text-white h-[40px] w-[140px] rounded-full">
+              <button className="bg-blue-600 text-white h-[40px] w-[140px] rounded-full" onClick={handleButton}>
                 Schedule a Call
               </button>
             </div>
