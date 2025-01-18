@@ -51,6 +51,7 @@ const Testimonials = () => {
     autoplaySpeed: 3000, // Set the time for each slide (in milliseconds)
     swipeToSlide: true, // Enable gesture swiping
     touchMove: true, // Allow moving the slides with gestures
+    arrows: false, // Disable arrows
     responsive: [
       {
         breakpoint: 1024, // For medium screens (tablets)
