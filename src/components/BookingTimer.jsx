@@ -29,7 +29,7 @@ function BookingTimer() {
   });
 
   return (
-    <section className="w-full h-auto bg-black flex flex-col text-white items-center justify-center py-16 space-y-10">
+    <section className="w-full h-auto flex flex-col text-white items-center justify-center pt-20 pb-10 space-y-5 md:space-y-10">
       <h1 className="text-center text-xl md:text-4xl font-bold">Book Before The Timer Ends To Grab <br />Invaluable Bonuses!!</h1>
       <div className="flex space-x-2 bg-accent3 px-3 md:px-8 py-3 md:py-5 rounded-xl md:rounded-3xl">
         {Object.entries(timeLeft).map(([unit, value]) => (

@@ -1,6 +1,10 @@
 import Slider from "react-slick"; // Import react-slick for sliding functionality
 
 const Testimonials = () => {
+  const handleButton = () => {
+    window.location.href = "https://calendly.com/cloudfixmedia/lead";
+  };
+
   // Testimonials data
   const testimonials = [
     {
@@ -64,30 +68,42 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="w-full h-full py-10 bg-black text-white text-center px-8 md:px-16">
-      <h1 className="text-xl md:text-4xl mb-6 font-bold">
-        What our clients say
-      </h1>
+    <div className="w-full h-full space-y-10 md:space-y-16 bg-black text-white text-center px-2 md:px-16">
+      <div className="flex flex-row justify-between items-center pt-5 md:pt-10 space-y-4 md:space-y-0">
+        <h1 className="text-xl md:text-5xl font-bold whitespace-nowrap">
+          What our clients say:
+        </h1>
+        {/* Button */}
+        <div className="w-full md:w-auto flex justify-center md:justify-end">
+          <button
+            onClick={handleButton}
+            className="px-3 md:px-8 py-2 md:py-3 w-2/3 md:w-auto rounded-full font-bold text-sm md:text-2xl text-black transition-transform duration-200 active:scale-95"
+            style={{
+              backgroundImage:
+                "radial-gradient(at bottom center, #A0FEFF 20%, #FFFFFF 100%)",
+            }}
+          >
+            BOOK A CALL
+          </button>
+        </div>
+      </div>
 
       <div className="relative">
         {/* Slick slider component */}
         <Slider {...settings}>
-        {testimonials.map((testimonial, index) => (
-  <div key={index} className="px-1 md:px-4">
-    <div
-      className="bg-gray-800 p-5 rounded-lg text-sm md:text-lg h-5/6 md:h-64 text-start flex flex-col justify-between space-y-4"
-    >
-      <p className="italic line-clamp-4 md:line-clamp-5">
-        &quot;{testimonial.quote}&quot;
-      </p>
-      <div>
-        <p className="font-semibold truncate">{testimonial.name}</p>
-        <p className="text-sm truncate">{testimonial.job}</p>
-      </div>
-    </div>
-  </div>
-))}
-
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className="px-1 md:px-4">
+              <div className="bg-gray-800 p-5 rounded-lg text-sm md:text-lg h-5/6 md:h-64 text-start flex flex-col justify-between space-y-4">
+                <p className="italic line-clamp-4 md:line-clamp-5">
+                  &quot;{testimonial.quote}&quot;
+                </p>
+                <div>
+                  <p className="font-semibold truncate">{testimonial.name}</p>
+                  <p className="text-sm truncate">{testimonial.job}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </Slider>
       </div>
     </div>
