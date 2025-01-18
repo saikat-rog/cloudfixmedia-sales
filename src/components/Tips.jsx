@@ -21,10 +21,10 @@ const LeadMagnet = () => {
   return (
     <div className="w-full py-10 bg-black text-white text-center px-4">
       <h2 className="text-xl md:text-3xl font-bold  mb-4">
-        FREE Offer
+        <span className="text-blue-600">FREE</span> Offer
       </h2>
-      <p className="text-sm md:text-lg mb-6">
-        <span className="font-semibold">10 Proven Marketing Tips for Men’s Fashion Brands.</span> <br />
+      <p className="text-sm md:text-lg mb-6 text-gray-300">
+        10 Proven Marketing Tips for Men’s Fashion Brands.<br />
         Enter your email to get the FREE PDF.
       </p>
       <form
@@ -41,21 +41,19 @@ const LeadMagnet = () => {
         />
         <button
           type="submit"
-          className="bg-white hover:bg-gray-400 text-accent2 w-1/3 md:w-24 h-10 rounded-md font-bold"
+          className="bg-blue-600 text-white hover:bg-gray-400 text-accent2 w-1/3 md:w-24 h-10 rounded-md font-bold"
         >
           Get PDF
         </button>
       </form>
-      <div className="pt-5 md:pt-10 w-full flex flex-col items-center">
+      {/* Button container centered */}
+      <div className="flex justify-center items-center pt-5 md:pt-10 w-full">
           <button
             onClick={handleButton}
-            className=" px-8 py-4 w-11/12 md:w-2/3 rounded-2xl font-bold text-md md:text-2xl text-black transition-transform duration-200 active:scale-95"
-            style={{
-              backgroundImage:
-                "radial-gradient(at bottom center, #A0FEFF 20%, #FFFFFF 100%)",
-            }}
+            className="w-4/5 md:w-1/3 py-4 bg-blue-600 text-xl text-white rounded-full shadow-[0_0_10px_4px_rgba(59,130,246,0.5)] hover:shadow-[0_0_20px_8px_rgba(59,130,246,0.75)] active:scale-95 transition-all duration-300"
           >
-            BOOK YOUR STRATEGY CALL NOW
+            Schedule a Meeting
+            <span><span className="ml-3 text-xl">→</span></span>
           </button>
         </div>
     </div>

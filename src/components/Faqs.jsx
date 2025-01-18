@@ -60,28 +60,26 @@ export default function Faqs() {
   };
 
   return (
-    <div >
-      <div className="max-w-3xl mx-auto p-6">
-        <h2 className="text-xl md:text-4xl font-bold text-center mb-8">
-          Frequently Asked Questions
+    <div>
+      <div id="faqs" className="max-w-3xl mx-auto p-6">
+        <h2 className="text-xl md:text-4xl font-bold text-center text-white mb-8">
+          Frequently Asked <span className="text-blue-600">Questions</span>
         </h2>
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className={`border rounded-lg p-3 mb-3 cursor-pointer transition-all duration-300 ${
-              faq.open
-                ? "bg-blue-50 border-accent2"
-                : "bg-white border-gray-300"
-            }`}
+            className={`rounded-lg p-3 mb-3 cursor-pointer transition-all duration-300 bg-rgb[13,13,13]`}
             onClick={() => toggleFAQ(index)}
           >
-            <div className="font-semibold text-gray-800 flex row justify-between space-x-2">
-              <h1 className="text-sm md:text-xl">{faq.question}</h1>
+            <div className="flex row justify-between space-x-2 text-white">
+              <h1 className="text-sm font-semibold md:text-xl">
+                {faq.question}
+              </h1>
               {faq.open && <div>-</div>}
               {!faq.open && <div>+</div>}
             </div>
             {faq.open && (
-              <div className="mt-2 text-gray-600 text-xs md:text-sm">
+              <div className="mt-2 text-gray-400 text-xs md:text-lg">
                 {faq.answer}
               </div>
             )}
@@ -91,13 +89,10 @@ export default function Faqs() {
       <div className="pt-5 md:pt-10 w-full flex flex-col items-center bg-accent2">
         <button
           onClick={handleButton}
-          className=" px-8 py-4 w-11/12 md:w-1/3 rounded-full font-bold text-md md:text-2xl text-black transition-transform duration-200 active:scale-95"
-          style={{
-            backgroundImage:
-              "radial-gradient(at bottom center, #A0FEFF 20%, #FFFFFF 100%)",
-          }}
+          className="px-8 py-4 w-11/12 md:w-1/3 rounded-full font-bold text-md md:text-2xl text-white bg-blue-600 transition-transform duration-200 active:scale-95 flex items-center justify-center"
         >
-          BOOK YOUR STRATEGY CALL NOW
+          Book your strategy call now
+          <span className="ml-3 text-xl">→</span>
         </button>
       </div>
     </div>

@@ -69,22 +69,18 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="w-full h-full space-y-10 md:space-y-16 bg-black text-white text-center px-2 md:px-16">
+    <div id="testimonials" className="w-full h-full space-y-10 md:space-y-16 bg-black text-white text-center px-2 md:px-16">
       <div className="flex flex-row justify-between items-center pt-5 md:pt-10 space-y-4 md:space-y-0">
         <h1 className="text-xl md:text-5xl font-bold whitespace-nowrap">
-          What our clients say:
+          What Our Clients<span className="font-bold italic text-blue-600"> Say :</span>
         </h1>
         {/* Button */}
         <div className="w-full md:w-auto flex justify-center md:justify-end">
           <button
             onClick={handleButton}
-            className="px-3 md:px-8 py-2 md:py-3 w-full ml-10 md:ml-0 md:w-auto rounded-full font-bold text-sm md:text-2xl text-black transition-transform duration-200 active:scale-95"
-            style={{
-              backgroundImage:
-                "radial-gradient(at bottom center, #A0FEFF 20%, #FFFFFF 100%)",
-            }}
+            className="px-3 md:px-16 py-2 md:py-3 w-full ml-10 md:ml-0 md:w-auto rounded-full font-bold text-sm md:text-2xl bg-blue-600 text-white transition-transform duration-200 active:scale-95"
           >
-            BOOK A CALL
+            Book a call
           </button>
         </div>
       </div>
