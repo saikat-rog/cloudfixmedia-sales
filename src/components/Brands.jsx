@@ -36,7 +36,7 @@ export default function Brands() {
           loop={0} // Infinite loop
           gradient={true}
           gradientWidth={50} // Adjust gradient width for effect
-          speed={60} // Reduced speed for smoother scrolling
+          speed={280} // Reduced speed for smoother scrolling
           gradientColor={[0, 0, 0]} // Proper RGB format for black gradient
         >
           <img src={One} alt="Brand 1" className="h-12 md:h-16 mx-5 md:mx-10 rounded-lg" />
