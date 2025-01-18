@@ -8,6 +8,9 @@ import p7 from "../assets/proof/p7.jpeg";
 import p8 from "../assets/proof/p8.jpg";
 import p9 from "../assets/proof/p9.png";
 import p10 from "../assets/proof/p10.png";
+import p11 from "../assets/proof/p11.jpg";
+import p12 from "../assets/proof/p12.jpg";
+import p13 from "../assets/proof/p13.jpg";
 import Marquee from "react-fast-marquee";
 
 const ProofInSlide = () => {
@@ -49,13 +52,22 @@ const ProofInSlide = () => {
               <img src={p7} alt="Proof 7" className="h-full" />
             </div>
             <div className="image-wrapper border-blue-600 border-2 mx-1 h-56 md:h-96">
-              <img src={p8} alt="Proof 7" className="h-full" />
+              <img src={p8} alt="Proof 8" className="h-full" />
             </div>
             <div className="image-wrapper border-blue-600 border-2 mx-1 h-56 md:h-96">
-              <img src={p9} alt="Proof 7" className="h-full" />
+              <img src={p9} alt="Proof 9" className="h-full" />
             </div>
             <div className="image-wrapper border-blue-600 border-2 mx-1 h-56 md:h-96">
-              <img src={p10} alt="Proof 7" className="h-full" />
+              <img src={p10} alt="Proof 10" className="h-full" />
+            </div>
+            <div className="image-wrapper border-blue-600 border-2 mx-1 h-56 md:h-96">
+              <img src={p11} alt="Proof 11" className="h-full" />
+            </div>
+            <div className="image-wrapper border-blue-600 border-2 mx-1 h-56 md:h-96">
+              <img src={p12} alt="Proof 12" className="h-full" />
+            </div>
+            <div className="image-wrapper border-blue-600 border-2 mx-1 h-56 md:h-96">
+              <img src={p13} alt="Proof 13" className="h-full" />
             </div>
         </Marquee>
       </div>
