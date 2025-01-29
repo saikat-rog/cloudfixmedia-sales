@@ -19,8 +19,9 @@ const Calendly = () => {
         Book Your Strategy Call Now
       </h1>
       <div
-        className="calendly-inline-widget md:min-w-[320px] h-[1000px] md:h-[800px]"
-        data-url="https://calendly.com/cloudfixmedia/45-minutes-exploration-call-cloudfixmedia"
+        className="calendly-inline-widget md:min-w-[320px] h-[700px] md:h-[800px]"
+        data-url="https://calendly.com/cloudfixmedia/45-minutes-exploration-call-cloudfixmedia?hide_gdpr_banner=1&background_color=1a1a1a&text_color=ffffff&primary_color=1e88e5"
+        style={{ minWidth: "320px", height: "700px" }}
       ></div>
     </div>
   );

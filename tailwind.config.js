@@ -8,9 +8,6 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#590000',
-        primary2: "#E65E5E",
-        secondary: '#F6F6DA',
         bg: '#FFFFFF'
       },
       backgroundColor: theme => ({
